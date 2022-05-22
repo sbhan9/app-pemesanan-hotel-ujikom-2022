@@ -1,0 +1,370 @@
+/* basic font */
+/* 
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+*/
+
+body {
+  color: #444444;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HERO  */
+section.hero {
+  margin-top: 160px;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero .text-hero h1 {
+  letter-spacing: 2px;
+}
+
+.hero .text-hero p {
+  letter-spacing: 1px;
+}
+
+/* HEADER */
+.navbar {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar .navbar-brand {
+  letter-spacing: 1px;
+}
+
+.navbar ul li a {
+  margin: 0 4px;
+  letter-spacing: 1px;
+}
+
+.navbar ul li hr {
+  border: none;
+  margin: 0 auto;
+  margin-top: -6px;
+  width: 86px;
+  padding: 0.7px;
+}
+
+.navbar ul li a.daftar {
+  background-color: #545bb3;
+  font-weight: bold;
+  color: #ffff !important;
+}
+
+.navbar ul li a.daftar:hover {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  color: #444444 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #545bb3;
+  color: #f5f5f5 !important;
+  font-weight: bold;
+}
+
+/* GELOMBANG */
+.gelombang {
+  margin-bottom: -150px;
+}
+
+/* RESERVASI */
+.reservasi {
+  padding: 100px 0;
+  background-color: #536dfe;
+  margin-top: 150px;
+  font-family: "Roboto", sans-serif;
+}
+
+.reservasi h1 {
+  letter-spacing: 3px;
+}
+
+.reservasi .card-reservasi {
+  box-shadow: 3px 10px 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ABOUT */
+section.about {
+  margin-top: 170px;
+  font-family: "Roboto", sans-serif;
+}
+
+.about .text-about h1 {
+  letter-spacing: 2px;
+}
+
+.about .text-about p {
+  letter-spacing: 1px;
+}
+
+/* PETA */
+section.peta {
+  margin-top: 150px;
+  font-family: "Roboto", sans-serif;
+}
+
+.peta h1 {
+  letter-spacing: 2px;
+}
+
+/* FOOTER */
+footer {
+  padding-top: 25px;
+  margin-top: 200px;
+  font-family: "Roboto", sans-serif;
+  background-color: #eeee;
+}
+
+.gelombang-footer {
+  margin-bottom: -250px;
+}
+
+div.icons i {
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+div.icons a {
+  text-decoration: none;
+  color: #444444;
+}
+
+footer .footer-bawah {
+  margin-top: 100px;
+  margin-bottom: -16px;
+}
+
+/* KAMAR */
+section.kamar {
+  background-color: #386fbd;
+  padding-top: 120px;
+  margin-top: 0px;
+  margin-bottom: 180px;
+  font-family: "Poppins", sans-serif;
+}
+
+.kamar h1 {
+  letter-spacing: 1px;
+}
+
+.img-kamar {
+  border-radius: 15px;
+}
+
+.no-kamar {
+  position: absolute;
+  top: 10px;
+  left: 3px;
+}
+
+.gelombang-kamar {
+  margin-top: -200px;
+}
+
+.kamar .card {
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* FASILITAS */
+section.fasilitas {
+  font-family: "Poppins", sans-serif;
+}
+
+.fasilitas h1 {
+  letter-spacing: 1px;
+}
+
+.fasilitas .card {
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.4);
+}
+
+.taekeun {
+  margin-top: -25px;
+  transition: 0.3s;
+}
+
+.turunkeun {
+  transition: 0.2s;
+}
+
+/* SLICK */
+.slick-prev {
+  position: absolute;
+  top: 40%;
+  margin-left: -38px;
+  z-index: 2;
+  left: 13px;
+  border: none;
+  outline: none;
+}
+
+.slick-next {
+  position: absolute;
+  top: 40%;
+  margin-left: 96.2%;
+  z-index: 2;
+  border: none;
+  outline: none;
+}
+
+/* HALAMAN MASUK DAN DAFTAR */
+section.masuk,
+.daftar {
+  font-family: "Poppins", sans-serif;
+}
+
+.masuk .col-kiri,
+.daftar .col-kiri {
+  background-color: #545bb3;
+  padding-bottom: 657px;
+}
+
+.masuk .container-masuk,
+.container-daftar {
+  margin-left: -51%;
+}
+
+.masuk .card-masuk {
+  margin-top: 47% !important;
+  box-shadow: 3px 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-daftar {
+  margin-top: 25% !important;
+  box-shadow: 3px 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-daftar {
+  margin: 12% auto;
+  box-shadow: 3px 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.masuk .col-kanan,
+.daftar .col-kanan {
+  background-color: #aeaeae;
+}
+
+.masuk hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section.masuk-android {
+  margin: 40% auto;
+  padding: 100% auto;
+  font-family: "Poppins", sans-serif;
+}
+
+section.daftar hr {
+  width: 300px;
+  margin: 0 auto;
+}
+
+body.body-daftar,
+body.body-masuk {
+  font-family: "Poppins", sans-serif;
+}
+
+section.daftar-android {
+  margin: 13% auto;
+}
+
+/* DASHBOARD */
+.img-dashboard-profile {
+  width: 150px;
+}
+
+/* USER LOGIN */
+.img-profile {
+  width: 30px;
+}
+
+section.booking-hotel {
+  margin-top: 130px;
+  font-family: "Poppins", sans-serif;
+}
+
+.booking-hotel h1 {
+  letter-spacing: 2px;
+}
+
+.booking-hotel .pesan-booking {
+  margin-top: -5px;
+}
+
+section.data-reservasi {
+  margin-top: 130px;
+  font-family: "Poppins", sans-serif;
+}
+
+.data-reservasi h1 {
+  letter-spacing: 2px;
+}
+
+section.tidak-ada-bookingan h1 {
+  margin-top: 200px;
+  margin-bottom: -80px;
+  letter-spacing: 2px;
+}
+
+.spasi-1 {
+  letter-spacing: 1px;
+}
+
+.spasi-2 {
+  letter-spacing: 2px;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+/* RESPONSIVE */
+/* android */
+@media only screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar ul.nav-kanan a {
+    margin-top: 10px;
+  }
+  body.body-masuk {
+    background-color: #545bb3;
+  }
+  body.body-daftar {
+    background-color: #545bb3;
+  }
+  .daftar-android hr {
+    width: 55%;
+    margin: 0 auto;
+  }
+}
+
+/* tablet */
+@media only screen and (max-width: 1000px) {
+  .slick-next {
+    left: 9px !important;
+  }
+  .navbar ul.nav-kanan a {
+    margin-top: 10px;
+  }
+}
+
+/* laptop */
+@media only screen and (min-width: 768px) {
+  .navbar ul.nav-tengah {
+    margin: 0 240px auto;
+  }
+  .hero .text-hero {
+    margin-top: 55px;
+  }
+  .slick-next {
+    left: 20px;
+  }
+}
