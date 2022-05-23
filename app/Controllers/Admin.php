@@ -57,7 +57,7 @@ class Admin extends BaseController
       ]);
    }
 
-   public function kamar() 
+   public function kamar()
    {
       $kamar = new KamarModel();
       return view('admin/kelola-kamar', [
@@ -113,19 +113,19 @@ class Admin extends BaseController
          ]
       ];
 
-      if(!$this->validate($validasi)) {
+      if (!$this->validate($validasi)) {
          session()->setFlashdata('editError', 'Opps... Mohon maaf data gagal di perbarui');
          return redirect()->to('/administrator/edit-fasilitas-umum/' . $this->request->getVar('idfasilitas'));
       }
 
       $fotoKamar = $this->request->getFile('fotoFasilitas');
-      if($fotoKamar->getError() == 4) {
+      if ($fotoKamar->getError() == 4) {
          $namaGambar = $this->request->getVar('gambarLama');
       } else {
          $namaGambar = $fotoKamar->getRandomName();
          $fotoKamar->move('assets/img/', $namaGambar);
       }
-      
+
       $this->db->table('tb_fasilitas_umum')->set([
          'fasilitas' => $this->request->getVar('namafasilitas'),
          'keterangan' => $this->request->getVar('ketFasilitas'),
@@ -165,7 +165,7 @@ class Admin extends BaseController
          ],
       ];
 
-      if(!$this->validate($validasi)) {
+      if (!$this->validate($validasi)) {
          session()->setFlashdata('error', 'Data Fasilatas gagal ditambahkan');
          return redirect()->to(base_url('/administrator/fasilitas-umum'));
       }
@@ -179,7 +179,7 @@ class Admin extends BaseController
          'keterangan' => $this->request->getVar('nket'),
          'foto_fasilitas' => $getNama
       ]);
-      
+
       session()->setFlashdata('tambahBerhasil', 'Data Fasilatas berhasil ditambahkan');
       return redirect()->to(base_url('/administrator/fasilitas-umum'));
    }
@@ -230,19 +230,19 @@ class Admin extends BaseController
          ],
       ];
 
-      if(!$this->validate($validasi)) {
+      if (!$this->validate($validasi)) {
          session()->setFlashdata('editError', 'Opps... Mohon maaf data gagal di perbarui');
          return redirect()->to('/administrator/edit-data-kamar/' . $this->request->getVar('idfasilitas'));
       }
 
       $fotoKamar = $this->request->getFile('fotoKamar');
-      if( $fotoKamar->getError() == 4 ) {
+      if ($fotoKamar->getError() == 4) {
          $namaFoto = $this->request->getVar('fotoKamar');
       } else {
          $namaFoto = $fotoKamar->getRandomName();
          $fotoKamar->move('img/', $namaFoto);
       }
-      
+
       $this->db->table('tb_kamar')->set([
          'tipe_kamar' => $this->request->getVar('tipekamar'),
          'fasilitas' => $this->request->getVar('fasilitaskamar'),
@@ -297,14 +297,14 @@ class Admin extends BaseController
          ],
       ];
 
-      if(!$this->validate($validasi)) {
+      if (!$this->validate($validasi)) {
          session()->setFlashdata('error', 'Data Fasilatas gagal ditambahkan');
          return redirect()->to(base_url('/administrator/kamar'));
       }
 
       $getfoto = $this->request->getFile('nfoto');
       $getNama = $getfoto->getRandomName();
-      $getfoto->move('assets/img/', $getNama);
+      $getfoto->move('img/', $getNama);
 
       $this->db->table('tb_kamar')->insert([
          'tipe_kamar' => $this->request->getVar('tipekamar'),
@@ -314,7 +314,7 @@ class Admin extends BaseController
          'foto_kamar' => $getNama,
          'kode_kamar' => $this->request->getVar('kodekamar'),
       ]);
-      
+
       session()->setFlashdata('tambahBerhasil', 'Data Fasilatas berhasil ditambahkan');
       return redirect()->to(base_url('/administrator/kamar'));
    }
@@ -328,7 +328,7 @@ class Admin extends BaseController
       }
 
       return view('admin/detail', [
-         'title' => 'Detail | '.$dataUser[0]['nama_lengkap'],
+         'title' => 'Detail | ' . $dataUser[0]['nama_lengkap'],
          'active' => 'fasilitas-umum',
          'dataUser' => $dataUser[0]
       ]);
